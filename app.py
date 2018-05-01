@@ -30,7 +30,7 @@ def new_color(new_color):
 
 @app.route('/read_file')
 def read_file():
-    f = open(".gitignore")
+    f = open("/data/testfile.txt")
     contents = f.read()
     return render_template('hello.html', name=socket.gethostname(), contents=contents, color=color_codes[color])
 
