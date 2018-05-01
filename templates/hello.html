@@ -10,4 +10,11 @@
 {% else %}
   <h1>Hello, World!</h1>
 {% endif %}
+
+  {% if contents %}
+  <textarea rows="10" cols="50">
+    {{ contents }}
+  </textarea>
+  {% endif %}
+
 </div>
